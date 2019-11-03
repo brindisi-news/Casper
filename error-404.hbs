@@ -14,13 +14,13 @@ into the {body} of the default.hbs template --}}
 <main id="site-main" class="site-main outer error-content">
     <div class="inner">
         <section class="error-message">
-          {{#if @site.logo}}
-          <a style:"text-align:center;" href="{{@site.url}}"><img src="{{img_url @site.logo size="m"}}"
-                  alt="{{@site.title}}" /></a>
-          {{else}}
-          <a class="site-nav-logo" href="{{@site.url}}">{{@site.title}}</a>
-          {{/if}}
             <h1 class="error-code">{{statusCode}}</h1>
+            {{#if @site.logo}}
+            <a style:"text-align:center;" href="{{@site.url}}"><img src="{{img_url @site.logo size="s"}}"
+                    alt="{{@site.title}}" /></a>
+            {{else}}
+            <a class="site-nav-logo" href="{{@site.url}}">{{@site.title}}</a>
+            {{/if}}
             <p class="error-description">Pagina non trovata</p>
             <a class="error-link" href="{{@site.url}}">Vai alla pagina principale →</a>
         </section>

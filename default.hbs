@@ -28,16 +28,16 @@
         {{!-- The footer at the very bottom of the screen --}}
         <footer class="site-footer outer">
             <div class="site-footer-content inner">
-                <section class="copyright"><a href="{{@site.url}}">{{@site.title}}</a> &copy; {{date format="YYYY"}}</section>
-                <nav class="site-footer-nav">
+                                <nav class="site-footer-nav">
                     <a href="{{@site.url}}">Ultime Notizie</a>
                     {{#if @site.facebook}}<a href="{{facebook_url @site.facebook}}" target="_blank" rel="noopener">Facebook</a>{{/if}}
                     {{#if @site.twitter}}<a href="{{twitter_url @site.twitter}}" target="_blank" rel="noopener">Twitter</a>{{/if}}
                     <a href="{{@site.url}}/privacy/" target="_blank" rel="noopener">Privacy Policy Cookies e GDPR</a>
                 </nav>
+                <span style="text-align:center;">{{t "Brindisi.tk è un progetto autofinanziato senza fini di lucro, non accetta donazioni, aborre la pubblicità e fa un uso minimo di cookies" }}</span>
+                <span style="text-align:center;">{{t "Questo sito è ottimizzato sia per dispositivi mobili che per l'accessibilità universale" }}</span>
+                <section class="copyright"><a href="{{@site.url}}">{{@site.title}}</a> &copy; {{date format="YYYY"}}</section>
             </div>
-            <span style="text-align:center;">{{t "Brindisi.tk è un progetto autofinanziato senza fini di lucro, non accetta donazioni, aborre la pubblicità e fa un uso minimo di cookies" }}</span>
-            <span style="text-align:center;">{{t "Questo sito è ottimizzato sia per dispositivi mobili che per l'accessibilità universale" }}</span>
         </footer>
 
     </div>
