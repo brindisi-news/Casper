@@ -15,7 +15,7 @@ into the {body} of the default.hbs template --}}
     <div class="inner">
         <section class="error-message">
           {{#if @site.logo}}
-          <a class="site-nav-logo" href="{{@site.url}}"><img src="{{img_url @site.logo size="xs"}}"
+          <a style:"align:center;" class="site-nav-logo" href="{{@site.url}}"><img src="{{img_url @site.logo size="m"}}"
                   alt="{{@site.title}}" /></a>
           {{else}}
           <a class="site-nav-logo" href="{{@site.url}}">{{@site.title}}</a>

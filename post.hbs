@@ -50,11 +50,11 @@ into the {body} of the default.hbs template --}}
                                         <div class="bio">
                                             <h2>{{name}}</h2>
                                             <p>{{bio}}</p>
-                                            <p><a href="{{url}}">More posts</a> by {{name}}.</p>
+                                            <p><a href="{{url}}">Altri articoli</a> by {{name}}.</p>
                                         </div>
                                         {{else}}
                                         <h2>{{name}}</h2>
-                                        <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+                                        <p>Leggi <a href="{{url}}">altri articoli</a> di questo autore.</p>
                                         {{/if}}
                                     </div>
                                 </div>
@@ -74,8 +74,8 @@ into the {body} of the default.hbs template --}}
                         <section class="post-full-byline-meta">
                             <h4 class="author-name">{{authors}}</h4>
                             <div class="byline-meta-content">
-                                <time class="byline-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time>
-                                <span class="byline-reading-time"><span class="bull">&bull;</span> {{reading_time}}</span>
+                                <time class="byline-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
+                                <span class="byline-reading-time"><span class="bull">&bull;</span> {{reading_time minute=(t "Leggi in 1 minuto") minutes=(t "Leggi in % minuti")}}</span>
                             </div>
                         </section>
 
@@ -98,7 +98,7 @@ into the {body} of the default.hbs template --}}
                         (max-width: 1170px) 1170px,
                             2000px"
                     src="{{img_url feature_image size="xl"}}"
-                    alt="{{title}}"
+                    alt="{{title}}{{t " - Brindisi.tk"}}"
                 />
             </figure>
             {{/if}}
