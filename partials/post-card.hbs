@@ -31,9 +31,9 @@
 
             <section class="post-card-excerpt">
                 {{#if feature_image}}
-                    <p>{{excerpt words="30"}}</p>
+                    <h3>{{excerpt words="30"}}</h3>
                 {{else}}
-                    <p>{{excerpt words="44"}}</p>
+                    <h3>{{excerpt words="44"}}</h3>
                 {{/if}}
             </section>
 
@@ -50,7 +50,7 @@
 
                     {{#if profile_image}}
                     <a href="{{url}}" class="static-avatar">
-                        <img class="author-profile-image" src="{{img_url profile_image size="xs"}}" alt="{{name}}" />
+                        <img class="author-profile-image" src="{{img_url profile_image size="xs"}}" alt="{{name}}{{t " - Brindisi.tk"}}" />
                     </a>
                     {{else}}
                     <a href="{{url}}" class="static-avatar author-profile-image">{{> "icons/avatar"}}</a>
